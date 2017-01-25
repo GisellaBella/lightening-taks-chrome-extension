@@ -67,6 +67,7 @@ Chrome extensions can also be created to work only on certain pages through the 
 Extensions that you download from the Chrome Web Store are packaged up as .crx files, which is great for distribution, but not so great for development.  Recognizing this, Chrome gives you a quick way of loading up your working directory for testing. Let's do that now.
 
 It’s really easy to test a new extension in Chrome. 
+
 1. Type “chrome://extensions” in a tab to bring up the extensions page.
 2. Make sure you are in development mode.
 3. Click “Load unpacked extension” 
