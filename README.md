@@ -12,24 +12,21 @@ But for this tutorial we are going to keep things simple and not use any of that
 	1. Create your working directory- which I'll point chrome to in a few steps.
 	2. Create a manifest file. All Chrome extensions require a manifest file (manifest.json)- basically our config file. This file is telling  Chrome what the extension is going to do, and what permissions it requires in order to do those things.
 	
-	In this example manifest, we will declare a browser action, the activeTab permission to see the URL of the current tab, and the host permission to access the external Google Image search API.
-	
-
-```{
-  "manifest_version": 2,
-	  "name": "Gisella's First Plugin",
-  "description": "This extension will do something useful and cool",
-  "version": "1.0",
-	"browser_action": {
-   "default_icon": "icon.png",
-   "default_popup": "popup.html"
-  },
-  "permissions": [
-   "activeTab" 
-	"https://ajax.googleapis.com/"
-	   ]
-}
-```
+In this example manifest, we will declare a browser action, the activeTab permission to see the URL of the current tab, and the host permission to access the external Google Image search API.
+	{
+	  "manifest_version": 2,
+		  "name": "Gisella's First Plugin",
+	  "description": "This extension will do something useful and cool",
+	  "version": "1.0",
+		"browser_action": {
+	   "default_icon": "icon.png",
+	   "default_popup": "popup.html"
+	  },
+	  "permissions": [
+	   "activeTab" 
+		"https://ajax.googleapis.com/"
+		   ]
+	}
 	
 	3. Create an extension icon- a 19x19px PNG file.
 	4.  Create an HTML page to show when a user clicks our Browser Action, so we’ll create a popup.html file.
